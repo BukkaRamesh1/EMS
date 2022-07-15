@@ -1,13 +1,13 @@
 package com.sample.ems;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.sample.ems.entity.Employee;
 
-@SpringBootApplication
 public class EmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmsApplication.class, args);
+		Employee e = new Employee("Manisha","disilva","India","Development",20000);
+		System.out.println(e.name);
+
 	}
 
 }
